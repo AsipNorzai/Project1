@@ -12,4 +12,4 @@ This game will be built upon technologies such as:
 If further technologies be used, will be added to the list.
 
 ## Important Information
-This project is still in progress so the game may not work.
+This game is working with some little bugs.  
