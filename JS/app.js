@@ -23,7 +23,7 @@ var secondPlayer = $('.player2');
 $(secondPlayer).text(player2);
 var turnCount = 0;
 
-
+//Selction of td in #table
 $('#table').find('td').on('click', function(){
   if (turnCount % 2 === 0){
     $(this).text('X');
@@ -40,9 +40,18 @@ $('#table').find('td').on('click', function(){
     $(firstPlayer).show().fadeIn();
     $(this).attr('disabled', true);
   }
-turnCount++;
-console.log(turnCount);
 
+  //Buttona Reset Button
+  $(".reset-btn").on('click',function(){
+      turnCount = 0;
+      $('td').text('');
+      $('table').find('td').removeAttr('disabled');
+      $(firstPlayer).text('It\'s ' + player1 + '\'s turns');
+  });
+
+//Turns incrementation
+  turnCount++;
+  console.log(turnCount);
 });
 
 var one = $('.one');
@@ -133,7 +142,7 @@ if (three.text() === turn) {
 if (turnCount === 8 && isWinner === 0) {
   $('#second-page').hide();
   $(tieMessagePage).fadeIn();
-  $(tieMessagePrint).text('It\'s a tie\n Try Again\n By clicking the red button');
+  $(tieMessagePrint).text('It\'s a tie\n Try Again\n');
   $(".reset-game").on('click',function(){
       location.reload();
   });
@@ -142,6 +151,6 @@ if (turnCount === 8 && isWinner === 0) {
 //End whoIsWinner
 }
 
-$(".reset-game").on('click',function(){
+$(".reset").on('click',function(){
     location.reload();
 });
