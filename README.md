@@ -1,5 +1,5 @@
 # TicTacToe Game
-A pretty well known game. Needs no introduction.
+A pretty well known game. Needs no introduction. [Click Me!](http://norzai.xyz/Tic-Tac-Toe/)
 
 ## Technologies will be used
 This game will be built upon technologies such as:
@@ -8,8 +8,3 @@ This game will be built upon technologies such as:
 * JS
 * jQuery
 * Bootstrap
-
-If further technologies be used, will be added to the list.
-
-## Important Information
-This project is still in progress so the game may not work.
